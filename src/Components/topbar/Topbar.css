@@ -1,0 +1,80 @@
+.navbar {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 15px;
+}
+.logo {
+  color: tomato;
+  font-weight: 600px;
+  font-style: 25px;
+}
+.logo font {
+  color: teal;
+}
+.fas {
+  cursor: pointer;
+}
+.menuList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  text-decoration-style: none;
+  list-style-type: none;
+}
+.menuList li a {
+  color: white;
+  text-decoration-style: none;
+  text-decoration: none;
+  font-weight: 300px;
+  padding: 10px 10px;
+  border-radius: 25px;
+}
+
+.menuList li a:hover {
+  background-color: red;
+  color: white;
+  border-radius: 15px;
+  transition: all 0.5s ease-in-out;
+}
+.menuList .fa-times {
+  transform: rotate(180deg);
+  transition: all 0.2s ease-in-out;
+}
+.menuList .fa-bars {
+  transform: rotate(180deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.menuIcon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .menuIcon {
+    display: block;
+  }
+  .menuList {
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    right: 0;
+    top: 53px;
+
+    transition: all 0.5s ease-in-out;
+  }
+  .menuList li {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .menuList.close {
+    right: -100%;
+    transition: all 0.5s ease-in-out;
+  }
+}
